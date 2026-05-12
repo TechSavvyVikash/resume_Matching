@@ -4,7 +4,7 @@ import math
 
 
 # ─────────────────────────────────────────────────────────────
-# SKILL ALIASES  (exact as provided — do not modify)
+# SKILL ALIASES  
 # ─────────────────────────────────────────────────────────────
 SKILL_ALIASES = {
     # Languages
