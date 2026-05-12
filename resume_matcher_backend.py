@@ -278,22 +278,4 @@ def main():
             "all_scores": [{"name": r["name"], "score": round(r["score"], 6)} for r in jd["ranking"]],
         }
 
-    # Export JSON for frontend
-    output = {
-        "vocab": vocab,
-        "idf": {k: round(v, 6) for k, v in idf.items()},
-        "df": df,
-        "resume_skills": {name: skills for name, skills in processed},
-        "jd_skills": {jd["id"]: jd["skills_normalized"] for jd in jd_vectors},
-        "results": final,
-    }
-    with open("results.json", "w") as f:
-        json.dump(output, f, indent=2)
-    print("\n[INFO] results.json written — load this in the frontend.")
-    print("=" * 60)
 
-    return output
-
-
-if __name__ == "__main__":
-    main()
