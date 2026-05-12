@@ -1,13 +1,7 @@
-"""
-Resume Matching Engine — Backend
-Redrob AI Campus Hackathon
 
-Run:  python3 resume_matcher_backend.py
-Output: results.json  +  printed final answer
-"""
 
 import math
-import json
+
 
 # ─────────────────────────────────────────────────────────────
 # SKILL ALIASES  (exact as provided — do not modify)
